@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertex Vinyls</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font_family.css">
-    <link rel="stylesheet" href="css/fotos.css">
-    <link rel="stylesheet" href="js/fotos.js">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="content">
-        <img id="myImg" src="img/LOGO vertex vinyls.png" alt="">
-        <h1>PROXIMAMENTE</h1>
-        <ul>
-            <li class="catalogo">Catalogo</li>
-            <li class="about">About</li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <img src="img/LOGO vertex vinyls.png" alt="Logo de la marca">
+            <h1>¡Próximamente!</h1>
+        </header>
+        <main>
+            <p>Estamos trabajando en algo increíble para ti.</p>
+            <p>Deja tu correo electrónico abajo y te mantendremos informado cuando estemos listos para lanzar.</p>
+            <form id="whitelistForm">
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="message"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
