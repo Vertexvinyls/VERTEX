@@ -1,18 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:0;
+    box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/img/fondo\ colores\ 300.jpg);
+    background-image: url('/img/fondo.jpg');
     background-size: cover;
     background-attachment: fixed;
-    color: #fff;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .vertex img {
+    max-width: 100%;
+    height: auto;
+    max-height: 175px; /* Ajusta el tamaño máximo del logo */
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.vertex {
+    cursor: pointer;
+}
+
+.turquesa {
+    content: url(/img/LOGO\ vertex\ vinyls\ turquesa.png);
+}
+
+.morado {
+    content: url(/img/LOGO\ vertex\ vinyls\ MORADO.png);
+}
+
+.negro {
+    content: url(/img/LOGO\ vertex\ vinyls\ negro.png);
 }
 
 .container {
@@ -33,6 +62,7 @@ header img {
 h1 {
     font-size: 2.5em;
     margin-top: 0;
+    color: #7B2182;
 }
 
 main {
@@ -41,6 +71,8 @@ main {
 
 p {
     margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 form {
@@ -58,7 +90,7 @@ input[type="email"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #7B2182;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -67,9 +99,78 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #00AE9E;
 }
 
 #message {
     font-size: 1.2em;
+}
+
+.logo {
+    position: fixed;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    animation-name: movelogo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    max-height: 100px;
+}
+
+
+
+@keyframes movelogo {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    20% {
+        top: 86%;
+        left: 15%;
+        rotate: 90deg;
+    }
+    40% {
+        top: 50%;
+        left: 92%;
+        rotate: 180deg;
+    }
+    60% {
+        top: 0%;
+        left: 70%;
+        rotate: 260deg;
+    }
+    80% {
+        top: 37%;
+        left: 37%;
+        rotate: 100%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+        rotate: 0;
+    }
+}
+
+/* Media queries para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    nav .vertex img {
+        max-width: 100%;
+        height: auto;
+        max-height: 75px; /* Ajusta el tamaño máximo del logo */
+        margin-top: 15%;
+        margin-bottom: 15%;
+        margin: 50px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
 }
