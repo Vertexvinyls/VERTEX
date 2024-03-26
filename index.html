@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/LOGO vertex vinyls.png" alt="Logo de la marca">
+            <nav>
+                <div class="vertex" id="vertex">
+                    <img src="img/LOGO vertex vinyls negro.png" alt="Logo de la marca">
+                </div>
+            </nav>
             <h1>¡Próximamente!</h1>
         </header>
         <main>
             <p>Estamos trabajando en algo increíble para ti.</p>
-            <p>Deja tu correo electrónico abajo y te mantendremos informado cuando estemos listos para lanzar.</p>
+            <p>Deja tu correo electrónico abajo y te mantendremos informado.</p>
             <form id="whitelistForm">
                 <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
                 <button type="submit">Enviar</button>
@@ -22,6 +26,12 @@
             <div id="message"></div>
         </main>
     </div>
+    <footer>
+        <h3></h3>
+        <div class="logo" id="logoContainer">
+            <img src="/img/LOGO VX negro pequeño.png" alt="" id="logoImage">
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
